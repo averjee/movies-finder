@@ -1,0 +1,53 @@
+{
+  "extends": "../../.eslintrc.json",
+  "ignorePatterns": [
+    "!**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": [
+                  "@angular/common"
+                ],
+                "importNames": [
+                  "CommonModule"
+                ],
+                "message": "Use the componen or directve directly e.g. `import {NgFor} from '@angular/common`'."
+              }
+            ]
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": [
+              "app",
+              "ct"
+            ],
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": [
+              "app",
+              "ct"
+            ],
+            "style": "kebab-case"
+          }
+        ]
+      }
+    }
+  ]
+}
