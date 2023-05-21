@@ -1,6 +1,6 @@
 ## Demo Link
 
-https://angular-movies-a12d3.web.app/list/category/popular
+https://angular-movies-a12d3.web.app/
 ## Installation Instructions
 
 `npm install`
